@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+server/public
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Local state
+.local/
+
+# OS files
+.DS_Store
+
+# Vite config backups
+vite.config.ts.*
+
+# Archives
+*.tar.gz
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories
+.vscode/
+.idea/

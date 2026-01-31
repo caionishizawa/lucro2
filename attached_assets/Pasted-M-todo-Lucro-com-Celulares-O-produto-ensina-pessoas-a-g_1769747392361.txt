@@ -1,0 +1,241 @@
+Método Lucro com Celulares
+
+O produto ensina pessoas a ganhar dinheiro comprando e revendendo celulares usados, SEM precisar de dinheiro para começar, SEM precisar conhecer ninguém, com acompanhamento real até a primeira venda, através de Grupo VIP no WhatsApp, networking ativo e suporte contínuo.
+
+Preço: R$ 47
+
+🎨 DIREÇÃO VISUAL (OBRIGATÓRIA)
+
+Fundo preto / cinza escuro profundo
+
+Destaques:
+
+Verde neon (#22c55e) → CTA, progresso, dinheiro
+
+Dourado (#fbbf24) → lucro, títulos, valores
+
+Tipografia:
+
+Inter / Poppins / Montserrat
+
+Estilo:
+
+Premium
+
+Minimalista
+
+Escaneável
+
+Cards:
+
+Bordas arredondadas
+
+Glow sutil verde/dourado
+
+Carrossel horizontal estilo Netflix
+
+Mobile-first
+
+Animações suaves (fade-in + swipe)
+
+🧱 ESTRUTURA DA PÁGINA
+🔥 SEÇÃO 1 — HERO (Primeira dobra)
+
+Badge verde no topo:
+
+🔥 ECOSSISTEMA COMPLETO + GRUPO VIP + ACOMPANHAMENTO ATÉ SUA PRIMEIRA VENDA
+
+Headline principal:
+
+Ganhe R$ 300 a R$ 500 por Celular — Sem Investir Nada, Sem Conhecer Ninguém, Com Acompanhamento do Zero Até Você Vender
+
+Subheadline:
+
+O único ecossistema completo que une método + comunidade + networking + suporte. Você entra sem dinheiro, sem contatos e não fica sozinho.
+
+Bullets com check verde:
+
+Comece com R$ 0
+
+Grupo VIP no WhatsApp
+
+Networking automático
+
+Acompanhamento real
+
+CTA principal (verde grande):
+
+QUERO ENTRAR NO ECOSSISTEMA COMPLETO
+
+Texto pequeno:
+
+Acesso imediato • Garantia de 7 dias • Grupo VIP vitalício
+
+Prova social:
+
++500 membros ativos no grupo
+
+🎠 SEÇÃO 2 — O QUE TE ESPERA DENTRO DO MÉTODO (CARROSSEL)
+
+⚠️ ESSA SEÇÃO DEVE SER UM CARROSSEL HORIZONTAL, idêntico ao das imagens anexadas.
+
+Headline centralizada:
+
+Confira o Que Te Espera Dentro do Método
+
+Subheadline pequena:
+
+5 módulos completos. Do zero ao lucro.
+
+📱 CARROSSEL DE MÓDULOS (SWIPE)
+
+Cada item é um card premium, com fundo escuro, título dourado e imagem temática.
+
+Slide 1 — MÓDULO 1
+
+Começando do Zero
+Aprenda 3 formas de começar sem investir dinheiro.
+
+Slide 2 — MÓDULO 2
+
+Avaliação de Celulares
+Checklist completo de 30 pontos para nunca ser enganado.
+
+Slide 3 — MÓDULO 3
+
+Negociação Profissional
+Scripts prontos para comprar barato e vender com margem.
+
+Slide 4 — MÓDULO 4
+
+Onde Comprar Abaixo do Mercado
+Fontes reais usadas pela comunidade.
+
+Slide 5 — MÓDULO 5
+
+Onde Vender com Lucro Máximo
+Marketplaces, grupos e estratégias práticas.
+
+Indicador de swipe:
+
+← Deslize para ver mais →
+
+💰 SEÇÃO 3 — SEM DINHEIRO PARA COMEÇAR
+
+Headline:
+
+Você Não Precisa De Dinheiro Para Começar
+
+Texto curto com destaque em “ERRADO”.
+
+Cards (3 colunas):
+
+Intermediação
+
+Consignação
+
+Venda Antecipada
+
+Texto final:
+
+No grupo VIP, membros compartilham celulares para consignação. Você pode começar com aparelhos de outros membros.
+
+🤝 SEÇÃO 4 — SEM CONHECER NINGUÉM
+
+Headline:
+
+Você Não Precisa Conhecer Ninguém. A Comunidade Te Conecta.
+
+Lista:
+
+Oportunidades diárias
+
+Networking
+
+Parcerias
+
+Alertas de consignação
+
+Dúvidas em tempo real
+
+CTA:
+
+QUERO FAZER PARTE DA COMUNIDADE
+
+🎯 SEÇÃO 5 — ACOMPANHAMENTO REAL
+
+Headline:
+
+Você Não Vai Ficar Sozinho
+
+Timeline:
+
+Dia 1: acesso + grupo
+
+Dias 2–3: oportunidades
+
+Dias 4–7: primeira venda
+
+Box destaque:
+
+🎯 Quem participa, vende.
+
+📦 SEÇÃO 6 — O QUE VOCÊ RECEBE
+
+Blocos:
+
+Método completo
+
+Grupo VIP WhatsApp
+
+Networking estratégico
+
+Acompanhamento
+
+Bônus
+
+Soma visual de valor:
+
+R$ 1.088+
+
+Preço final:
+
+R$ 47
+
+🗓️ SEÇÃO 7 — SUA JORNADA EM 7 DIAS
+
+Timeline visual clara.
+
+🧾 SEÇÃO 8 — PROVA SOCIAL
+
+Depoimentos em cards dark.
+
+✅❌ SEÇÃO 9 — PARA QUEM É / NÃO É
+
+Duas colunas.
+
+🛡️ SEÇÃO 10 — GARANTIA
+
+7 dias reembolso
+
+Compromisso da comunidade
+
+💳 SEÇÃO 11 — CTA FINAL
+
+Por apenas R$ 47
+
+CTA grande pulsando:
+
+QUERO ENTRAR AGORA
+
+❓ SEÇÃO 12 — FAQ
+
+Accordion simples.
+
+🚨 SEÇÃO 13 — URGÊNCIA FINAL
+
+Texto emocional + CTA.
+
+⚫ FOOTER
+
+Aviso legal + direitos.

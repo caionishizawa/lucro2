@@ -1,0 +1,38 @@
+# Arquivos e pastas a ignorar no deploy da Vercel
+
+# Backend files (não deploy na Vercel)
+server/
+dist/index.cjs
+
+# Database
+migrations/
+drizzle.config.ts
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+.cache/
+.temp/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

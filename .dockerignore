@@ -1,0 +1,26 @@
+node_modules
+npm-debug.log
+.env
+.env.local
+.env.production
+.git
+.gitignore
+README.md
+.vscode
+.idea
+*.md
+!package*.json
+
+# Build artifacts (will be rebuilt in Docker)
+dist/public
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Deployment files
+.vercel
+.vercelignore
+railway.json
+nixpacks.toml
+fly.toml
