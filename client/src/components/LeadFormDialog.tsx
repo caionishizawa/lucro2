@@ -14,30 +14,40 @@ interface LeadFormDialogProps {
 }
 
 export function LeadFormDialog({ open, onOpenChange, ctaText = "GARANTIR MINHA VAGA" }: LeadFormDialogProps) {
-  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const { mutate, isPending } = useCreateLead();
   const { toast } = useToast();
 
+  const formatPhone = (value: string) => {
+    const numbers = value.replace(/\D/g, "");
+    if (numbers.length <= 11) {
+      return numbers.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+    }
+    return value;
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!name || !phone) return;
 
     mutate(
-      { email, name },
+      { email: phone, name },
       {
         onSuccess: () => {
           toast({
             title: "Sucesso!",
             description: "Redirecionando para o checkout...",
           });
-          // Simulate redirect delay for UX
           setTimeout(() => {
-            // In production, this would go to Stripe/Hotmart/etc.
-            window.location.href = "https://checkout.example.com/pay"; 
+            window.location.href = "https://pay.cakto.com.br/34oy7v2_750448";
             onOpenChange(false);
-          }, 1000);
+          }, 500);
         },
+        onError: () => {
+          // Redirect anyway even if lead save fails
+          window.location.href = "https://pay.cakto.com.br/34oy7v2_750448";
+        }
       }
     );
   };
@@ -58,6 +68,7 @@ export function LeadFormDialog({ open, onOpenChange, ctaText = "GARANTIR MINHA V
             <Label htmlFor="name">Seu Nome</Label>
             <Input
               id="name"
+              required
               placeholder="João Silva"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -65,15 +76,16 @@ export function LeadFormDialog({ open, onOpenChange, ctaText = "GARANTIR MINHA V
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Seu Melhor E-mail</Label>
+            <Label htmlFor="phone">Seu WhatsApp</Label>
             <Input
-              id="email"
-              type="email"
+              id="phone"
+              type="tel"
               required
-              placeholder="joao@exemplo.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              placeholder="(11) 99999-9999"
+              value={phone}
+              onChange={(e) => setPhone(formatPhone(e.target.value))}
               className="bg-zinc-800 border-zinc-700 focus:border-primary focus:ring-primary/20"
+              maxLength={15}
             />
           </div>
           <Button 
