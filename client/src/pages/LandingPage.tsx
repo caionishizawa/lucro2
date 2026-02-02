@@ -461,7 +461,7 @@ export default function LandingPage() {
                   <p className="text-zinc-500 text-lg">Valor total: <span className="line-through">R$ 1.632,00</span></p>
                   <div className="flex items-center justify-center gap-4">
                     <span className="text-zinc-400 text-xl">Hoje por apenas:</span>
-                    <span className="text-5xl md:text-6xl font-extrabold text-white">R$ 47</span>
+                    <span className="text-5xl md:text-6xl font-extrabold text-white">R$ 59</span>
                   </div>
                   <p className="text-primary font-medium text-sm animate-pulse">Pagamento único. Sem mensalidades.</p>
                 </div>
