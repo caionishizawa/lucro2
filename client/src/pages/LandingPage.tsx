@@ -32,12 +32,12 @@ const modules = [
   },
   {
     title: "Negociação Profissional",
-    description: "Scripts de conversa prontos (copie e cole) para comprar barato e garantir sua margem.",
+    description: "Scripts de conversa prontos (copie e cole) para comprar barato e garantir sua margem. Processo completo de leilão até fornecedores.",
     image: "/images/module3.png"
   },
   {
     title: "Canais de Venda",
-    description: "Onde anunciar para vender rápido: OLX, Mercado Livre, Instagram e mais.",
+    description: "Como anunciar com o maior lucro e margem. Estratégias exclusivas para vender rápido: OLX, Mercado Livre, Instagram e mais.",
     image: "/images/module4.png"
   },
   {
@@ -165,6 +165,8 @@ export default function LandingPage() {
               <div className="flex items-center gap-2"><Check className="text-primary w-5 h-5" /> Comece com R$ 0</div>
               <div className="flex items-center gap-2"><Check className="text-primary w-5 h-5" /> Grupo VIP no WhatsApp</div>
               <div className="flex items-center gap-2"><Check className="text-primary w-5 h-5" /> Acompanhamento Real</div>
+              <div className="flex items-center gap-2"><Check className="text-primary w-5 h-5" /> Lista de fornecedores completa</div>
+              <div className="flex items-center gap-2"><Check className="text-primary w-5 h-5" /> Templates prontos para vender</div>
             </motion.div>
 
             <motion.div
