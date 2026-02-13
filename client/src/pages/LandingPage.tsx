@@ -27,12 +27,12 @@ const modules = [
   },
   {
     title: "Avaliação de Celulares",
-    description: "Checklist completo de 30 pontos vitais para nunca ser enganado na hora da compra.",
+    description: "Lista completa de onde comprar e onde vender, fornecedores e leilões",
     image: "/images/module2.png"
   },
   {
     title: "Negociação Profissional",
-    description: "Scripts de conversa prontos (copie e cole) para comprar barato e garantir sua margem. Processo completo de leilão até fornecedores.",
+    description: "Método de negociação matador, tanto para clientes quanto para fornecedores e leilões para tomadas de decisões",
     image: "/images/module3.png"
   },
   {
@@ -310,7 +310,7 @@ export default function LandingPage() {
               <FeatureCard
                 icon={<Globe />}
                 title="Oportunidades Diárias"
-                description="Membros postam oportunidades de compra e venda todos os dias no grupo VIP."
+                description="Membros postam oportunidade de compra e venda todos os dias Nos grupos de fornecedores e leilões"
               />
               <FeatureCard
                 icon={<Instagram />}
@@ -465,7 +465,6 @@ export default function LandingPage() {
                     <span className="text-zinc-400 text-xl">Hoje por apenas:</span>
                     <span className="text-5xl md:text-6xl font-extrabold text-white">R$ 59</span>
                   </div>
-                  <p className="text-primary font-medium text-sm animate-pulse">Pagamento único. Sem mensalidades.</p>
                 </div>
 
                 <Button 
