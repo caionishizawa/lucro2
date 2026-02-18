@@ -10,7 +10,6 @@ import {
 import {
   Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 } from "@/components/ui/carousel";
-import { LeadFormDialog } from "@/components/LeadFormDialog";
 import { SectionHeader } from "@/components/SectionHeader";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ModuleCard } from "@/components/ModuleCard";
@@ -67,14 +66,15 @@ const faqs = [
 ];
 
 export default function LandingPage() {
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const checkoutUrl = "https://pay.cakto.com.br/34oy7v2_750448";
 
-  const toggleCheckout = () => setIsCheckoutOpen(!isCheckoutOpen);
+  const goToCheckout = () => {
+    window.location.href = checkoutUrl;
+  };
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-100 font-sans selection:bg-primary/30">
-      <LeadFormDialog open={isCheckoutOpen} onOpenChange={setIsCheckoutOpen} />
 
       {/* --- Nav --- */}
       <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5">
@@ -90,9 +90,9 @@ export default function LandingPage() {
               <a href="#metodo" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">O Método</a>
               <a href="#modulos" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">Módulos</a>
               <a href="#garantia" className="text-sm font-medium text-zinc-300 hover:text-white transition-colors">Garantia</a>
-              <Button 
-                onClick={toggleCheckout}
-                size="sm" 
+              <Button
+                onClick={goToCheckout}
+                size="sm"
                 className="bg-primary hover:bg-primary/90 text-white font-bold shadow-[0_0_15px_rgba(34,197,94,0.3)]"
               >
                 ENTRAR AGORA
@@ -114,7 +114,7 @@ export default function LandingPage() {
             <a href="#metodo" className="block text-zinc-300 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>O Método</a>
             <a href="#modulos" className="block text-zinc-300 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>Módulos</a>
             <a href="#garantia" className="block text-zinc-300 hover:text-white" onClick={() => setIsMobileMenuOpen(false)}>Garantia</a>
-            <Button onClick={toggleCheckout} className="w-full bg-primary font-bold">ENTRAR AGORA</Button>
+            <Button onClick={goToCheckout} className="w-full bg-primary font-bold">ENTRAR AGORA</Button>
           </div>
         )}
       </nav>
@@ -174,9 +174,9 @@ export default function LandingPage() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              <Button 
-                onClick={toggleCheckout}
-                size="lg" 
+              <Button
+                onClick={goToCheckout}
+                size="lg"
                 className="w-full sm:w-auto px-8 py-8 text-lg md:text-xl font-bold rounded-xl bg-primary hover:bg-primary/90 hover:scale-105 transition-all shadow-[0_0_30px_rgba(34,197,94,0.4)]"
               >
                 QUERO ENTRAR NO ECOSSISTEMA
@@ -467,9 +467,9 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                <Button 
-                  onClick={toggleCheckout}
-                  size="lg" 
+                <Button
+                  onClick={goToCheckout}
+                  size="lg"
                   className="w-full h-16 text-xl font-bold rounded-xl bg-primary hover:bg-primary/90 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all hover:scale-[1.02]"
                 >
                   QUERO ENTRAR NO ECOSSISTEMA AGORA
