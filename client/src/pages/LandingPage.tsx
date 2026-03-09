@@ -194,6 +194,58 @@ export default function LandingPage() {
               </div>
               <p>+500 membros ativos faturando agora</p>
             </div>
+
+            {/* Phone Video Frame */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6 }}
+              className="mt-16 flex justify-center"
+            >
+              {/* Outer glow */}
+              <div className="relative">
+                <div className="absolute inset-0 rounded-[3rem] bg-primary/20 blur-2xl scale-110 pointer-events-none" />
+
+                {/* Phone shell */}
+                <div className="relative w-[220px] sm:w-[260px] rounded-[3rem] bg-zinc-900 border border-zinc-700 shadow-[0_0_0_2px_#18181b,0_30px_80px_rgba(0,0,0,0.8)] p-3">
+
+                  {/* Top notch bar */}
+                  <div className="flex justify-center mb-2">
+                    <div className="w-16 h-[5px] rounded-full bg-zinc-700" />
+                  </div>
+
+                  {/* Speaker dot row */}
+                  <div className="flex justify-center items-center gap-1 mb-2">
+                    <div className="w-1 h-1 rounded-full bg-zinc-600" />
+                    <div className="w-8 h-[3px] rounded-full bg-zinc-600" />
+                    <div className="w-1 h-1 rounded-full bg-zinc-600" />
+                  </div>
+
+                  {/* Screen / video area */}
+                  <div className="rounded-[2rem] overflow-hidden bg-black aspect-[9/19.5]">
+                    <video
+                      src="https://res.cloudinary.com/dxwo2haxk/video/upload/v1773077743/LucroCelularMotion_1_dtrggx.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Home indicator */}
+                  <div className="flex justify-center mt-3">
+                    <div className="w-20 h-[4px] rounded-full bg-zinc-600" />
+                  </div>
+
+                  {/* Side buttons (decorative) */}
+                  <div className="absolute -left-[3px] top-24 w-[3px] h-8 rounded-l-full bg-zinc-700" />
+                  <div className="absolute -left-[3px] top-36 w-[3px] h-12 rounded-l-full bg-zinc-700" />
+                  <div className="absolute -left-[3px] top-52 w-[3px] h-12 rounded-l-full bg-zinc-700" />
+                  <div className="absolute -right-[3px] top-32 w-[3px] h-16 rounded-r-full bg-zinc-700" />
+                </div>
+              </div>
+            </motion.div>
           </div>
         </section>
 
