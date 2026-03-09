@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Check, ArrowRight, Shield, Users, Smartphone, DollarSign,
-  Menu, X, Star, Clock, Zap, Target, Globe, Instagram, Layout, MapPin, Package, TrendingUp
+  Menu, X, Star, Clock, Zap, Target, Globe, Instagram, Layout, MapPin, Package, TrendingUp, Play
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { 
@@ -67,6 +67,8 @@ const faqs = [
 
 export default function LandingPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const checkoutUrl = "https://pay.cakto.com.br/34oy7v2_750448";
 
   const goToCheckout = () => {
@@ -222,15 +224,46 @@ export default function LandingPage() {
                   </div>
 
                   {/* Screen / video area */}
-                  <div className="rounded-[2rem] overflow-hidden bg-black aspect-[9/19.5]">
+                  <div className="rounded-[2rem] overflow-hidden bg-black aspect-[9/19.5] relative">
                     <video
+                      ref={videoRef}
                       src="https://res.cloudinary.com/dxwo2haxk/video/upload/v1773077743/LucroCelularMotion_1_dtrggx.mp4"
-                      autoPlay
-                      loop
-                      muted
                       playsInline
+                      preload="auto"
                       className="w-full h-full object-cover"
+                      onLoadedMetadata={() => {
+                        const v = videoRef.current;
+                        if (v) {
+                          // Seek to the logo frame (last 2 seconds)
+                          v.currentTime = Math.max(0, v.duration - 2);
+                        }
+                      }}
+                      onEnded={() => setIsVideoPlaying(false)}
                     />
+
+                    {/* Play button overlay */}
+                    {!isVideoPlaying && (
+                      <button
+                        onClick={() => {
+                          const v = videoRef.current;
+                          if (v) {
+                            v.currentTime = 0;
+                            v.muted = false;
+                            v.play().then(() => setIsVideoPlaying(true)).catch(() => {
+                              // Fallback: play muted if autoplay policy blocks
+                              v.muted = true;
+                              v.play().then(() => setIsVideoPlaying(true));
+                            });
+                          }
+                        }}
+                        className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/20 transition-colors"
+                        aria-label="Reproduzir vídeo"
+                      >
+                        <div className="w-14 h-14 rounded-full bg-primary/90 flex items-center justify-center shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:scale-110 transition-transform">
+                          <Play className="w-6 h-6 text-white fill-white ml-1" />
+                        </div>
+                      </button>
+                    )}
                   </div>
 
                   {/* Home indicator */}
